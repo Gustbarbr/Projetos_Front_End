@@ -27,7 +27,7 @@ main {
 
 .logo-1 {
     border-radius: 100%;
-    width: 17%;
+    width: 20%;
     padding: 10px;
 }
 
@@ -150,8 +150,12 @@ button.slick-next {
     right: 0;
 }
 
-.slider-principal {
-    width: 100%!important;
+.slider-principal img {
+    width: 720px;
+    height: 720px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 ul.slick-dots li button {
