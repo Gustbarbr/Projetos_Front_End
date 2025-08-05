@@ -1,0 +1,3 @@
+HTML semântico d~so tags que dão significado ao elemento, 
+sendo algumas delas "main", "section" e "article", 
+enquanto "div" e "span" são não semânticos.

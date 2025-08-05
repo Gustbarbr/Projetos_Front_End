@@ -1,0 +1,191 @@
+<!-- Formulários recebem dados do usuário e enviam a um sevidor -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+    <h2>Formulários HTML</h2>
+    <form action="register.php" method="GET"> <!-- Action define a página/arquivo para onde os dados serão enviados. Method define se será GET ou POST. -->
+        <div>
+            <label>Nome: </label>
+            <!-- Type define para que será utilizado o input, no caso recebe textos. -->
+            <input type="text">
+        </div>
+
+        <div>
+            <!-- O atributo "for" é usado para linkar a label com o input, e seu valor deve ser igual ao atributo "name". Normalmente é usado por propósitos semânticos, o que ajuda no ranking do Google. -->
+            <label for="age">Idade: </label>
+            <!-- O atributo "name" é usado para categorizar um input, fazendo com que seu valor seja pego pelo servidor através do "name".  -->
+            <input type="text" name="age">
+        </div>
+
+        <div>
+            <!-- Para criar um elemento de seleção é necessário criar as tags "select" e "option", onde a tag "select" tem seus valores representados pelas tags "option". -->
+            <label for="job">Selecione sua profissão: </label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">QA/Tester</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="contract">Você concorda com os termos de uso? </label>
+            <select name="contract">
+                <!-- O atributo "selected" é usada para definir um valor selecionado por padrão, normalmente usado para um opção mais provável de ser escolhida. -->
+                <option value="yes">Sim</option>
+                <option value="no" selected>Não</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="items">Selecione os itens desejados: </label>
+            <!-- É possível permitir múltiplas seleções na tag "select", o que é útil para quando várias opções são verdade. -->
+             <select name="items" multiple>
+                <option value="headset">Headset</option>
+                <option value="mouse">Mouse</option>
+                <option value="keyboard">Teclado</option>
+                <option value="chair">Cadeira</option>
+             </select>
+        </div>
+
+        <div>
+            <label for="comment">Comentário: </label>
+            <!-- A tag "textarea" é semelhante a tag "text", porém é utilizada para textos maiores. -->
+            <textarea name="comment" cols="30" rows="10"></textarea> <!-- O atributo "cols" é igual a largura e "rows" igual a altura -->
+        </div>
+
+        <div>
+            <!-- A tag "fieldset" é utilizada para agrupar inputs, enqaunto "legend" funciona como label. São úteis para quando dois ou mais inputs tem o mesmo sentido. -->
+             <fieldset>
+                <legend>Preencha suas informações: </legend>
+                <label for="firstname">Nom: </label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome: </label>
+                <input type="text" name="lastname">
+             </fieldset>
+        </div>
+
+        <div>
+            <label for="flavor">Selecione um sabor de bolo: </label>
+            <input type="text" list="flavors" name="flavor">
+            <!-- A tag "datalist" é semelhante ao "select" porém com opção de autocomplete, fazendo com que apareçam possíveis valores para preencher o input ou selecionar uma opção por meio de uma lista. -->
+            <!-- As opções são linkadas pelo atributo "list". -->
+            <datalist id="flavors">
+                <option value="Floresta Negra"></option>
+                <option value="Ninho"></option>
+                <option value="Morango"></option>
+                <option value="Abacaxi"></option>
+                <option value="Milho"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="password">Digite sua senha: </label>
+            <!-- É possível utilizar o atributo "password", para que o valor fique oculto, exibindo apenas *. -->
+            <input type="password" name="password">
+        </div>
+
+        <div>
+            <!-- É possível selecionar um opção dentre vários com o input de tipo "radio". -->
+            <label for="transport-method">Escolha seu método de transporte: </label>
+            <div class="radio">
+                <input type="radio" value="vehicles" name="transport">
+                <label for="car">Carro</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="vehicles" name="transport">
+                <label for="motocycle">Motocicleta</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="vehicles" name="transport">
+                <label for="autobus">Ônibus</label>
+            </div>
+        </div>
+
+        <div>
+            <!-- O tipo "checkbox" é similar ao "radio", porém permite a escolha de várias opções simultaneamente, além de permitir cancelar uma opção selecionada. -->
+            <label for="dinner-options">Opções de janta: </label>
+            <div class="radio">
+                <input type="checkbox" name="dinner[]" value="meat">
+                <label for="meat">Carne</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="dinner[]" value="chicken">
+                <label for="chicken">Frango</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="dinner[]" value="salad">
+                <label for="salad">Salada</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="dinner[]" value="mayonnaise">
+                <label for="mayonnaise">Maionese</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="dinner[]" value="french-fries">
+                <label for="french-fries">Batata frita</label>
+            </div>
+        </div>
+
+        <div>
+            <!-- É possível selecionar uma data com um input de tipo "date". -->
+            <label for="birthday">Data de nascimento: </label>
+            <input type="date"> <!-- O formato é configurado com base no navegador. -->
+        </div>
+
+        <div>
+            <!-- É possível enviar um arquivo para o servidor comum input de tipo "file". -->
+            <label for="file">Enviar uma imagem</label>
+            <input type="file" name="file">
+        </div>
+
+        <div>
+            <!-- É possível usar o tipo "number" para aceitar somente números no input. -->
+            <label for="salary">Insira seu salário atual: </label>
+            <input type="number" name="salary">
+        </div>
+
+        <div>
+            <!-- O tipo "email" é semelhante ao tipo text, porém faz uma validação se o texto inserido possui o padrão de e-mail, como @, por exemplo. -->
+            <label for="email">Insira seu e-mail: </label>
+            <input type="email" name="email">
+        </div>
+
+        <div>
+            <!-- O atributo "value" define um valor no input, como se o usuário já tivese escrito algo. -->
+            <label for="value">Digite um valor: </label>
+            <input type="text" name="value" value="O valor é 1">
+        </div>
+
+        <div>
+            <!-- É possível desativar um input, impossibilitando que seja selecionado. -->
+            <p>Tente mudar o valor!</p>
+            <input type="text" value="Não precisa preencher!" disabled>
+        </div>
+
+        <div>
+            <!-- É possível adicionar dicas para o usuário através do atributo "placeholder". Do contrário do "value", o placeholder é como um "fantasma", onde vai sumindo conforme o usuário digita. -->
+            <label for="current-job">Digite sua profissão: </label>
+            <input type="text" name="current-job" placeholder="No que você está trabalhando agora?">
+        </div>
+
+        <div>
+            <!-- O atributo "required" força o usuário a preencher um input, mostrando um alerta e não enviando nenhum valor caso não preenchido. -->
+            <label for="birthyear">Ano de nascimento: </label>
+            <input type="text" placeholder="Digite o ano em que você nasceu" required>
+        </div>
+
+        <!-- É possível enviar os dados para um servidor através de um input de type "submit" e uma requisição HTTP. -->
+        <input type="submit" value="Enviar">
+
+        <!-- É possível reiniciar os valores inseridos no formulário através de um input de tipo "reset". -->
+        <input type="reset" value="Limpar">
+
+    </form>
+ </body>
+ </html>

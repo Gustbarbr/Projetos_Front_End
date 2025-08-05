@@ -1,0 +1,434 @@
+/* CSS Externo */
+body {
+    padding-bottom: 500px; /* Gera um espaço abaixo do conteúdo, nesse caso o body*/
+}
+
+h3 {
+    color: thistle;
+}
+
+/* Classes */
+.paragraph {
+    background-color: black;
+    color: royalblue;
+    padding: 5px;
+}
+
+/* IDs */
+#exclusive-title {
+    background-color: blanchedalmond;
+    color: burlywood;
+    padding: 3px;
+}
+
+/* Ordem dos seletores */
+h2 {
+    border-bottom: 2px solid sandybrown;
+}
+
+.titulo {
+    border-bottom: 3px solid seagreen;
+}
+#algum-titulo {
+    border-bottom: 3px solid slateblue;
+}
+
+/* Nome da cor */
+.nome-cor {
+    color: crimson;
+}
+
+/* Cor hexadecimal */
+.cor-hexadecimal {
+    color: #012345;
+}
+
+/* Aprofundamento hex */
+.hex {
+    color: #936;
+}
+
+/* Cor RGB */
+.rgb {
+    color: rgb(0, 255, 255);
+}
+
+/* Cor RGBa */
+.rgba {
+    color: rgba(255, 126, 70, 0.25);
+}
+
+/* Cor HSL */
+.hsl {
+    color: hsl(200, 30%, 80%);
+}
+
+/* Background color */
+.cor-fundo-nome {
+    background-color: crimson;
+    color: violet;
+}
+
+.cor-fundo-hex {
+    background-color: #549823;
+    color: #6df10e;
+}
+
+.cor-fundo-rgb {
+    background-color: rgb(123, 70, 230);
+    color: rgb(58, 12, 151);
+}
+
+.cor-fundo-hsl {
+    background-color: hsl(55, 20%, 45%);
+    color: hsl(55, 29%, 29%);
+}
+
+/* Background opacity */
+.bg-opacity {
+    background-color: black;
+    opacity: 0.2;
+}
+
+/* Background RGBa opacity */
+.rgba-opacity {
+    background-color: rgba(16, 181, 231, 0.3);
+}
+
+/* Background image */
+.bg-image {
+    background-image: url("../img/galaxy.jpg");
+    color: aliceblue;
+}
+
+/* Melhorando a visualização da imagem */
+.not-centered-bg, 
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/snow_mountain.jpg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Imagem da entidade Box Model */
+.img-box-model {
+    background-image: url("../img/box_model.jpg");
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Altura e largura */
+
+.height-width {
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+}
+
+.height-width-2 {
+    height: 200px;
+    background-color: rosybrown;
+}
+
+/* Padding */
+.without-padding,
+.padding {
+    background-color: #111;
+    color: #FFF;
+}
+
+.padding {
+    padding: 30px;
+}
+
+/* Paddings individuais */
+.padding-bottom {
+    background-color: #012345;
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+.padding-top-left {
+    background-color: #144501;
+    color: #FFF;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* Shorthand padding */
+.shorthand-padding {
+    background-color: #971461;
+    color: #FFF;
+    padding: 30px 10px 30px 50px ;
+}
+
+/* Border box */
+.without-border-box,
+.border-box {
+    background-color: #10b973;
+    color: #FFF;
+    width: 200px;
+    padding: 25px;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+/* Borders */
+.border {
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2 {
+    border: 3px dotted blue;
+}
+
+/* Borders individuais */
+.borders-individuais {
+    box-sizing: border-box;
+    width: 200px;
+    border-top: 5px groove royalblue;
+    border-left: 5px ridge crimson;
+}
+
+/* Arredondar border */
+.arredondar-border {
+    box-sizing: border-box;
+    width: 200px;
+    padding-left: 45px;
+    border: 5px dotted #0d72d8;
+    border-radius: 50px;
+    background-color: #111;
+    color: #0d72d8;
+}
+
+/* Margin */
+.margin {
+    margin: 20px 10px 30px 50px;
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #10b973;
+}
+
+/* Unindo elementos box model */
+.elementos-box-model-unidos {
+    height: 100px;
+    width: 250px;
+    padding: 20px 15px 30px 15px;
+    border: 5px groove #00fff2;
+    border-radius: 30px;
+    margin: 50px;
+    box-sizing: border-box;
+    color: #00fff2;
+    background-color: #272525d3;
+}
+
+/* Alinhando texto */
+.alinhando-texto {
+    text-align: right;
+    font-size: 40px;
+    color: #144501;
+}
+
+.container-centralizar {
+    text-align: center;
+    width: 300px;
+    border: 3px double dodgerblue;
+}
+
+/* Efeitos de texto */
+.texto-underline,
+.texto-cortado,
+.removendo-underline {
+    font-size: 20px;
+    color: #222;
+}
+
+.texto-underline {
+    text-decoration: underline;
+}
+
+.texto-cortado {
+    text-decoration: line-through;
+}
+
+.removendo-underline {
+    text-decoration: none;
+}
+
+/* Transformando texto */
+.letras-grandes {
+    text-transform: uppercase;
+}
+
+.letras-pequenas {
+    text-transform: lowercase;
+}
+
+/* Espaçamento entre letras */
+.letter-spacing {
+    letter-spacing: 5px;
+}
+
+/* Mudando fontes */
+.fontes {
+    font-family: fantasy;
+}
+
+/* Mudando estilo da fonte */
+.estilo-fonte {
+    font-style: italic;
+}
+
+/* Mudando tamanho da fonte */
+.tamanho-fonte {
+    font-weight: 700;
+}
+
+/* Display */
+
+.display-block,
+.display-inline {
+    background-color: #3dffe5;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.inline-block {
+    background-color: #0d72d8;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Position */
+
+.static,
+.relative,
+.fixed,
+.absolute,
+.sticky {
+    border: 3px solid #971461;
+    box-sizing: border-box;
+    width: 400px;
+    margin: 20px;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    top: 100px;
+    left: 500px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: #e0dcdc;
+    border: 1px solid #012345;
+    bottom: 0;
+    left: 0;
+}
+
+.absolute {
+    position: absolute;
+    top: 5500px;
+    right: 0px;
+}
+
+.sticky {
+    position: sticky;
+    background-color: #e0dcdc;
+    border: 1px solid #012345;
+    top: 10px;
+}
+
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #0d72d8;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #10b973;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 10px;
+    right: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Z-index */
+
+.relative-container-2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #0d72d8;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fc2f2f;
+    position: absolute;
+    z-index: 2;
+}
+
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #5ffc2f;
+    position: absolute;
+    z-index: 1;
+}
+
+.absolute-5 {
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2f5ffc;
+    position: absolute;
+    z-index: 3;
+}

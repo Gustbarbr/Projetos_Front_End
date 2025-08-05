@@ -1,0 +1,18 @@
+No CSS as cores são divididas em 4 grupos:
+
+Nomes de cor: como red, green ou blue, mas não muito utilizadas, pois nem todas as cores tem nome;
+
+RGB: configuramos as tonalidades de red, green e blue;
+    - A intensidade do Red, Green e Blue variam entre 0 e 255, sendo 0 o mais escuro e 255 o mais claro.
+
+RGBa: funciona de forma similar ao RGB, porém também é possível modificar o alpha, valor que determina a opacidade;
+    - Os valores de alpha vão de 0 a 1, sendo 0 invisível e 1 totalmente visível.
+
+Hexadecimal: uma união de letras e números que podem criar uma cor, é a forma mais utilizada;
+    - São 6 dígitos após a #, os dois primeiros representam vermelho, depois verde e por fim azul.
+    - Os valores vão de 0 a F, sendo 0 mais escuro e F mais claro. O valor #000 é preto e #FFF é branco.
+    - Dois dígitos repetidos são representados como apenas um, por exemplo "#001122" vira "#012".
+
+HSL: hue, saturation e lightness, mudando estes valores temos uma cor;
+
+O ranking de uso das cores é: HEX > RGB > HSL > Nomes de cor.

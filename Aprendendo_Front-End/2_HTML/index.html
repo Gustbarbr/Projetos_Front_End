@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Declara a versão do HTML. -->
+
+<html> <!-- Envolve todo o código HTML. -->
+
+    <head> <!-- Na tag <head> são colocadas todas as configurações de um site, como a importação do CSS e o título da página (meta tags). -->
+        <title>HTML Fundamentos</title>
+    </head>
+
+    <body> <!-- Na tag <body> todos os elementos visíveis da página são inseridos. -->
+        <!-- Os títulos (h*) são conhecidos como headings e vão de 1 a 6. Servem principalmente para separação. -->
+        <h1>Esse título é o mais importante (h1)</h1> <!-- O maior e mais importante é o h1, sendo assim apenas pode ser colocado um desse por página. -->
+        <h2>Outro título (h2)</h2>
+        <h3>Mais um (h3)</h3>
+        <h4>E outro (h4)</h4>
+        <h5>E outro... (h5)</h5>
+        <h6>Esse é o último! (h6)</h6>
+
+        <p>Esse é um parágrafo, ou seja, um texto maior que apenas um título.</p> <!-- Parágrafos <p> são usados para textos maiores, sendo que cada parágrafo começa uma nova linha. -->
+        <p>Mais um parágrafo...</p>
+
+        <!-- Tags sem conteúdo possui a função de, por exemplo, quebrar uma linha. São self-closing tags, onde não é necessário adicionar uma tag de fechamento -->
+        <p>Testando a tag "br", que serve para <br> quebrar uma linha.</p>
+        <br>
+        <p>Testando a tag "hr", que gera uma <hr> linha horizontal.</p>
+        <hr>
+
+        <!-- Atributos podem ser utilizados para adicionar funcionalidades as tags -->
+        <a href="https://www.google.com">Google</a> <!-- A tag <a> é responsável por direcionar o usuário a uma nova página ou site, onde no href="" é inserido o endereço/URL da página/site. -->
+        <br>
+        <a href="https://www.youtube.com" target="_blank">Youtube - Abre em uma nova aba</a> <!-- Para redirecionar a um domínio de terceiros normalmente é aberta uma nova aba, e isso é feito através do target=_blank. -->   
+        <br>
+
+        <!-- Uma imagem é inserida através da self closing tag <img> e seu caminho relativo fica em src="". Normalmente é criada uma pasta assets ou img para fins de organização. -->
+        <img src="img/snow_mountain.jpg">
+
+        <!-- Nas tags de imagem existe o atributo alt, onde é inserido um pequeno texto que descreve a imagem. Todas as imagens devem ter esse atributo, visto que aumenta a acessibilidade e a posição no ranque do Google.  -->
+        <img src="img/city_night.jpg" alt="Cidade de noite">
+
+        <!-- Listas são importantes por muitos motivos, incluindo criar menus. -->
+        <ul>
+            <li>Carros</li>
+            <li>Motos</li>
+            <li>Navios</li>
+            <li>Aviões</li>
+            <li>Submarinos</li>
+        </ul>
+
+        <!-- Listas ordenadas servem para marcar procedimentos ou guias a serem seguidos. -->
+         <h2>Receita de bolo</h2>
+        <ol>
+            <li>Bata as claras em neve e reserve.</li>
+            <li>Misture as gemas, a margarina e o açúcar até obter uma massa homogênea.</li>
+            <li>Acrescente o leite e a farinha de trigo aos poucos, sem parar de bater.</li>
+            <li>Por último, adicione as claras em neve e o fermento.</li>
+            <li>Despeje a massa em uma forma grande de furo central untada e enfarinhada.</li>
+            <li>Asse em forno médio 180 °C, preaquecido, por aproximadamente 40 minutos ou ao furar o bolo com um garfo, este saia limpo.</li>
+        </ol>
+
+         <!-- Tabelas são usadas para exibir dados que podem ser categorizados em colunas. -->
+        <table>
+            <tr> <!-- Cada linha fica dentro da tag <tr>. -->
+                <!-- No cabeçalho usamos a tag <th>. -->
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <!-- Os dados ficam dentro da tag <td>. -->
+                <td>24.122.061-5</td>
+                <td>Gustavo</td>
+                <td>21</td>
+            </tr>
+        </table>
+
+          <!-- A tag <div> é usada para criar divisões/seções no site. O principal propósito é encapsular elementos conectados entre si. -->
+        <div>
+            <h2>Iniciando uma seção</h2>
+            <p>Descrição dessa seção, com um texto relacionado ao assunto. </p>
+            <a href="#">Saber mais</a>
+        </div>
+
+        <div>
+            <h2>Sobre mim</h2>
+            <p>Nome: Gustavo Gomes</p>
+        </div>
+    </body>
+
+</html>
+
+<!-- Tags de bloco -->
+    <!-- são aquelas que ocupam toda a largura disponível do seu elemento pai e geralmente iniciam uma nova linha. 
+    Exemplos comuns incluem <div>, <p>, <h1> a <h6>, <ul>, <ol>, <form>, entre outros. -->

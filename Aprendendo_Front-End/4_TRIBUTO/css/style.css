@@ -1,0 +1,75 @@
+html {
+    font-family: Helvetica;
+    background-color: #DDD;
+}
+
+.container {
+    max-width: 1100px;
+    background-color: #FFF;
+    position: relative;
+    margin: 50px auto; /* Em cima e em baixo terão 50 pixels de diferença, e já nas laterais o CSS ira centralizar automaticamente.  */
+    padding: 20px 50px; /* Top e bottom com 20px e laterais com 50px. */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+}
+
+.main-paragraph {
+    font-style: italic;
+}
+
+/* Imagem de destaque */
+.featured-image {
+    text-align: center; /* Em alguns casos é possível centralizar uma imagem com text align. */
+    margin-top: 30px; 
+}
+
+/* Biografia */
+.biography-container {
+    padding: 25px 0; /* Top e bottom com 25px e laterais zeradas. */
+    margin: 25px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+}
+
+/* Quotes */
+.quotes-container {
+    background-color: #DDD;
+    padding: 30px
+}
+
+.quotes-container blockquote { /* Aplica essas regras somente a tag blockquote. */
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quotes-container p {
+    font-style: italic;
+}
+
+/* Curiosidades */
+.curiosities-container {
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px dashed #DDD;
+    border-bottom: 1px dashed #DDD;
+}
+
+.curiosities-container li {
+    height: 30px;
+}
+
+/* Imagem bold */
+.img-bold {
+    font-weight: bold;
+    text-align: center;
+}

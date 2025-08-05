@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Flexbox é um valor do display, sendo a maneira mais utilizada para acondicionar elementos em um container. 
+    Se o flex estiver no elemento pai, os filhos serão movimentados também. 
+    Com flex os elementos se comportam de forma parecida com o inline. -->
+    <div class="flex-container">
+      <p>Meu</p>
+      <p>Primeiro</p>
+      <p>Elemento</p>
+      <p>Com Flex</p>
+    </div>
+    <!-- É possível transformar o comportamento inline do flex em bloco. -->
+    <div class="flex-column">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+    <!-- É possível definir quantos elementos ficarão em uma linha, mesmo com flex aplicado. -->
+    <div class="wrap">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível mudar como um conteúdo é posicionado no eixxo horizontal. -->
+    <h2>Center</h2>
+    <div class="justify">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>Space Around</h2>
+    <div class="space-around">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>Space Between</h2>
+    <div class="space-between">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>End</h2>
+    <div class="end">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível ajustar os itens verticalmente. -->
+    <h2>Center</h2>
+    <div class="align-center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>End</h2>
+    <div class="flex-end">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h2>Stretch</h2>
+    <div class="stretch">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível espaçar os elementos que estão no flex. -->
+    <div class="gap">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível mudar a ordem dos elementos filhos. -->
+    <h2>Order</h2>
+    <div class="order">
+      <div class="box" id="three">3</div>
+      <div class="box" id="one">1</div>
+      <div class="box" id="two">2</div>
+    </div>
+
+    <!-- É possível mudar a proporção de um ou mais elementos filhos. Por exemplo, se o valor de grow for 2, o elemento vai crescer duas vezes mais. -->
+    <h2>Grow</h2>
+    <div class="grow">
+      <div class="box"></div>
+      <div class="box big"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível configurar a largura de um flex com o "basis". É possível usar junto com "grow", que no caso preenche o que o "basis" deixa vazio. -->
+    <h2>Basis</h2>
+    <div class="basis">
+      <div class="box"></div>
+      <div class="box big"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível diminuir a proporção de um ou mais elementos filhos. "Shrink" funciona como oposto de "grow". Normalmente é usando com "basis" e "grow". -->
+    <h2>Shrink</h2>
+    <div class="shrink">
+      <div class="box"></div>
+      <div class="box small"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- Existe um shorthand para flex onde a ordem fica grow, shrink, basis. Por exemplo, flex: 2 1 100px (grow = 2, shrink = 1, basis = 100px). -->
+    <h2>Shorthand</h2>
+    <div class="shorthand">
+      <div class="box"></div>
+      <div class="box different"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- É possível alinhar um elemento diferente dos demais, por exemplo enquanto outros seguem o alinhamento do container, esse segue seu próprio. -->
+    <h2>Auto alinhamento</h2>
+    <div class="auto-aligment">
+      <div class="box"></div>
+      <div class="box different"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

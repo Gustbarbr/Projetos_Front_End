@@ -1,0 +1,9 @@
+Inline: quando estilos são adicionados através de um atributo.
+Internal: quando são adicionados na tag do head.
+External: quando são adicionados através de um arquivo externo.
+
+O mais recomendado é sempre o external, pois melhora a organização do projeto.
+
+O CSS é carregado a partir de uma ordem e ela funciona da seguinte maneira: Inline > Internal = External > Padrão do navegador, ou seja, o primeiro é o Inline.
+
+/* Comentário do CSS */

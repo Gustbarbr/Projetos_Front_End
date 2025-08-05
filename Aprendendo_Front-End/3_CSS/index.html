@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- CSS Interno (ver o txt para explicações) -->
+     <style>
+        p{
+            color: gold;
+            font-size: 20px;
+        }
+     </style>
+
+     <!-- CSS Externo (ver o txt para explicações) -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/lists.css">
+</head>
+<body>
+    <!-- CSS Inline (ver o txt para explicações) -->
+     <h1 style="color: blue">Mudar cor com o Inline</h1>
+     <h1 style="color: aquamarine">Outro título com Inline</h1>
+
+    <!-- É possível utilizar várias regras do CSS Inline, basta separá-los por ";". -->
+    <h1 style="color: burlywood; font-size: 40px; border-bottom: 1px solid brown;">Mudar cor e tamanho da fonte</h1>
+
+    <!-- CSS Interno -->
+    <p>Eu fui estilizado pelo Internal</p>
+    <p>Mais um</p>
+
+    <!-- CSS Externo -->
+    <h3>Texto editado com CSS Externo</h3>
+
+    <!-- Ordem do CSS -->
+    <p style="color: blueviolet;">Ordem do CSS</p>
+
+    <!-- Quando existe mais de um arquivo CSS, todos devem ser importados na tag <head>, onde o último ppossui mais prioridade. -->
+    <ul>
+        <li>Limão</li>
+        <li>Uva</li>
+        <li>Pêssego</li>
+        <li>Manga</li>
+        <li>Amora   </li>
+    </ul>
+
+    <!-- Classes são usadas para conjuntos de elementos. -->
+    <p class="paragraph">Texto para a classe...</p>
+    <p class="paragraph">A classe serve para conjuntos de elementos...</p>
+    <p class="paragraph">Ela pode ser aplicada no CSS e JS.</p>
+
+    <!-- IDs são usados para elementos únicos por página. -->
+    <h1 id="exclusive-title">Esse é um título usando ID.</h1>
+
+    <!-- A ordem de prioridade dos seletores é a seguinte: Id > Classe > Seletor de classe. -->
+    <h2 id="algum-titulo" class="titulo">Texto com id e classe</h2>
+    <h2 class="titulo">Texto com classe</h2>
+    <h2>Texto com seletor</h2>
+
+    <!-- Nome da cor -->
+    <p class="nome-cor">Texto estilizado com nome da cor</p>
+
+    <!-- Cor hexadecimal -->
+    <p class="cor-hexadecimal">Texto estilizado com valor hexadecimal da cor</p>
+
+    <!-- Aprofundamento hex -->
+    <p class="hex">Outro texto com cores em hexadecimal</p>
+
+    <!-- Cor RGB -->
+    <p class="rgb">Texto estilizado com RGB</p>
+
+    <!-- Cor RGBa -->
+    <p class="rgba">Texto estilizado com RGBa</p>
+
+    <!-- Cor HSL -->
+    <p class="hsl">Texto estilizado com HSL</p>
+
+    <!-- Quase todos os elementos possuem um background, e as regras das cores também se aplica ao background-color. -->
+    <p class="cor-fundo-nome">Texto de exemplo para as regras de background color (nome de cor)</p>
+    <p class="cor-fundo-hex">Texto de exemplo para as regras de background color (hex)</p>
+    <p class="cor-fundo-rgb">Texto de exemplo para as regras de background color (rgb)</p>
+    <p class="cor-fundo-hsl">Texto de exemplo para as regras de background color (hsl)</p>
+
+    <!-- É possível alterar a opacidade do background, indo dos valores de 0 a 1 (0 invisível e 1 totalmente visível). Com a regra opacity também é alterada a opacidade dos elementos dentro do background. -->
+    <div class="bg-opacity">
+        <p>Estou aqui!</p>
+    </div>
+
+    <!-- Para aplicar o opacity sem afetar o elemento de dentro, basta usar o RGBa. -->
+     <div class="rgba-opacity">
+        <p>Alterando opacidade somente do background</p>
+     </div>
+
+    <!-- É possível inserir imagens no background. -->
+    <h1 class="bg-image">Esse título tem uma imagem!</h1>
+
+    <!-- Às vezes é necessário molhorar a visualização da imagem, centralizando a mesma. Nos casos abaixo também é necessário definir altura e largura, caso contrário a imagem não irá aparecer. -->
+    <div class="not-centered-bg"></div>
+    <div class="centered-bg"></div>
+
+    <!-- Box model é uma entidade criada em todos os elementos HTML. Ela consiste em 4 partes: altura e largura, padding, border e margin. -->
+    <div class="img-box-model"></div>
+
+    <!-- Altura e largura são elementos centrais na box model. Os block elements já vem com 100% de largura. -->
+    <div class="height-width"></div>
+    <div class="height-width-2"></div>
+
+    <!-- Padding, também chamado de espaçamento interno, é o espaço entre o conteúdo e a borda do elemento. -->
+    <div class="without-padding">Esse não tem padding</div>
+    <div class="padding">Esse tem padding</div>
+
+    <!-- É possível adicionar o padding a um lado individual do elemento. -->
+    <div class="padding-bottom">Padding só embaixo</div>
+    <div class="padding-top-left">Padding em cima e na esquerda</div>
+
+    <!-- A shorthand padding permite configurar todas as direções individualmente em apenas uma linha. A sequência é: top, right, bottom, left. -->
+    <div class="shorthand-padding">Texto com shorthand padding</div>
+
+    <!-- O tamanho da padding é adicionado na largura horizontal do elemento. Por exemplo: um elemento com 200px de largura e 25px de padding vira uma elemento com 250px de largura. A regra box-sizing e o valor border-box resolvem isso. -->
+    <div class="without-border-box">Sem border box</div>
+    <div class="border-box">Com border box</div>
+
+    <!-- A border fica entre o padding e a margin, sendo o padding o espaçamento interno e a border o externo. -->
+    <div class="border">Borda</div>
+    <div class="border-2">Borda 2</div>
+
+    <!-- Exemplos de border. -->
+    <img src="img/border_style.png" alt="Estilos de border">
+    <br>
+    <img src="img/border_style_examples.png" alt="Códigos de estilos de border">
+    <br>
+    <img src="img/border_style_results.png" alt="Resultados de estilos de border">
+
+    <!-- É possível definir borders individuais utilizando border-*, onde * é top, right, bottom ou left. O Shorthand também se aplica aqui. -->
+    <div class="borders-individuais">Border no chão e a esquerda</div>
+
+    <!-- É possível arredondar as borders de um elemento. -->
+    <br>
+    <div class="arredondar-border">Elemento redondo arredondado</div>
+
+    <!-- Margin é o espaçamento externo do elemento, onde é possível aplicar o mesmo shorthand que o padding. -->
+    <div class="margin">Exemplo de margin</div>
+
+    <!-- Unindo todos os elementos do box model. -->
+    <div class="elementos-box-model-unidos">Usando todos elementos do box model</div>
+
+    <!-- É possível alinhar textos em várias direções, e por padrão vem alinhados a esquerda. -->
+    <div class="alinhando-texto">Alinhando o texto a direita</div>
+    <div class="container-centralizar">
+        <h2>Container</h2>
+        <p>Texto alinhado dentro da div</p>
+    </div>
+
+    <!-- É possível decorar o texto, colocando underline ou até uma linha que corta o texto. -->
+    <div>
+        <p class="texto-underline">Texto com underline</p>
+        <p class="texto-cortado">Texto cortado</p>
+        <a href="#" class="removendo-underline">Link sem underline</a>
+    </div>
+
+    <!-- É possível alterar como um texto é exibido, alterando por exemplo para upper ou lower case. -->
+    <!-- NUNCA SE ESCREVE COM CAPSLOCK EM HTML -->
+    <div class="letras-grandes">aumento de letras</div>
+    <div class="letras-pequenas">DIMINUIÇÃO DE LETRAS</div>
+
+    <!-- É possível alterar o espaçamento entre as letras. -->
+    <div class="letter-spacing">Letras espaçadas</div>
+
+    <!-- É possível alterar as fontes do CSS. -->
+    <div class="fontes">Mudando fontes</div>
+
+    <!-- É possível mudar o aspecto das letras, sendo que os valores são normal, italic e oblique. -->
+    <div class="estilo-fonte">Mudando estilo da fonte</div>
+
+    <!-- É possível alterar a fonte para mais fina ou mais grossa, sendo valores de 100 a 900, sendo 100 o mais fino e 900 o mais grosso. -->
+    <div class="tamanho-fonte">Mudando o tamanho da fonte</div>
+
+    <!-- Em HTML e CSS temos alguns elementos que são considerados de bloco e outros inline. Div é exemplo de block e span de inline. É possível mudar esse comportamento. -->
+    <!-- Block ocupa todo o espaço disponível e inline apenas o necessário. -->
+    <div class="display-block">Display block</div>
+    <div class="display-inline">Display inline</div>
+
+    <br>
+
+    <div class="inline-block">A</div>
+    <div class="inline-block">B</div>
+    <div class="inline-block">C</div>
+
+    <!-- É possível ocultar um elemento sem removê-lo do HTML. -->
+    <div class="oculto">Estou oculto</div>
+
+    <!-- A regra position é responsável por posicionar os elementos na tela. -->
+    <div class="static">Static: não é afetado pelas propriedades top, right, bottom, left</div>
+    <div class="relative">Relative: é afetado pelas propriedades top, right, bottom, left e é posicionado de forma relativa a sua posição normal (static)</div> <!-- Normalmente não utilizada. -->
+    <div class="fixed">Fixed: é fixo ao viewport, então mesmo que a página seja scrollada ele não muda de posição</div>
+    <div class="absolute">Absolute: pode ser posicionado em qualquer lugar da tela usando as propriedas top, right, bottom e left</div>
+    <div class="sticky">Sticky: é posicionado com base no scroll do usuário como no fixed, porém, quando o elemento volta a sua posição original ele se torna relative</div>
+
+    <!-- É possível ajustar a posição de um elemento absolute com um container relative. -->
+    <div class="relative-container">
+        <div class="absolute-1"></div>
+        <div class="absolute-2"></div>
+    </div>
+
+    <!-- Quando existem dois elementos na mesma posição, é possível usar o z-index, onde o elemento com maior valor prevalece. -->
+    <div class="relative-container-2">
+        <div class="absolute-3"></div>
+        <div class="absolute-4"></div>
+        <div class="absolute-5"></div>
+    </div>
+
+</body>
+</html>
